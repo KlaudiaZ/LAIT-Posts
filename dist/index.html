@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>LaIT - Vanilla Init Project</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="build.css" />
-  <script src="build.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Posts app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="build.css" />
+    <script src="build.js"></script>
+
 </head>
+
 <body>
-  <p id="start-info">Hello in LaIT init project. It is your start point.</p>
+    <p id="start-info">Posts app</p>
+    <div class="main">
+        <div class="posts">
+            <table>
+                <tbody id="posts">
+                    <tr>
+                        <td>Test</td>
+                        <td>Example</td>
+                        <td><button class="show-and-hide-comments" data-function="0" id="0">Show comments</button></td>
+                        <td><button class="delete-post" id="delete-post-0">Delete</button></td>
+                    </tr>
+                    <tr class="comments" id="comments-0">
+                        <td>
+                            <div class="comments-div">Comments</div>
+                            <form class="comment-add" id="comment-add-0">
+                                <input type="text" name="comment-body" id="comment-body-0" placeholder="Enter your comment">
+                                <button class="add-comments" id="add-comment-0">Add comment</button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="input-field">
+            <form>
+                <input type="text" name="author" id="author" placeholder="Author">
+                <input type="text" name="title" id="title" placeholder="Title">
+                <br>
+                <button id="add">Add post</button>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>

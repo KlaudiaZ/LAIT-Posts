@@ -1,4 +1,65 @@
+body {
+    box-sizing: content-box;
+    background: #E5E9F2 url('/img/bg.jpg') no-repeat;
+}
+
 p#start-info {
-  font-size: 3em;
-  text-align: center;
+    font-size: 3em;
+    text-align: center;
+    margin: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 1em;
+}
+
+.posts {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+tr {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(190, 199, 228, 0.5);
+    padding: 5px;
+}
+
+td {
+    width: 50%;
+}
+
+tr:nth-child(2n+2) {
+    background-color: rgba(133, 143, 186, 0.5);
+}
+
+.input-field {
+    width: 300px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(81, 144, 178, 0.5);
+}
+
+button {
+    height: 50px;
+    margin: 5px;
+    font-weight: bold;
+    color: #C0C7E3;
+    background-color: #313836;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+input {
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-left: 3px;
+    background-color: #BDC8E4;
+}
+
+.comments {
+    display: none;
 }
